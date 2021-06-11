@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+:root {
+    --Blue: hsl(223, 87%, 63%);
+    --Pale-Blue: hsl(223, 100%, 88%);
+    --Light-Red: hsl(354, 100%, 66%);
+    --Gray: hsl(0, 0%, 59%);
+    --Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+main {
+    text-align: center;
+    padding: 35px;
+}
+main .logo {
+    height: 35px;
+    margin-bottom: 30px;
+}
+main > h1 {
+    font-size: 32px;
+    font-weight: 300;
+    color: var(--Gray);
+}
+main > h1 span{
+    font-weight: 700;
+    color: black;
+}
+main > h2 {
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+main .emailsec {
+    margin-bottom: 45px;
+}
+main .emailsec #emailinput{
+    width: 34%;
+    padding: 15px 35px;
+    margin-right: 22px;
+    border-radius: 25px;
+    border: 2px solid var(--Gray);
+    font-family: inherit;
+    outline: none;
+    
+}
+
+main .emailsec button{
+    padding: 15px 40px;
+    border-radius: 25px;
+    border: none;
+    background-color: var(--Blue);
+    color: white;
+    font-family: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in;
+}
+main .emailsec button:hover {
+    background-color: var(--Pale-Blue);
+    
+}
+main .dashboard {
+    width: 52%;
+    margin-bottom: 15px;
+}
+
+main .socialmedia {
+    width: max-content;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+main .socialmedia a {
+    margin-right: 20px;
+    border: 1px solid var(--Blue);
+    border-radius: 50%;
+    padding: 10px 13px;
+    color: var(--Blue);
+    transition: color 0.3s ease-in-out;
+}
+main .socialmedia a:hover {
+    background-color: var(--Blue);
+    color: white;
+}
+main .socialmedia a:first-child {
+    padding: 10px 15px;
+}
+main > p {
+    font-size: 15px;
+    color: var(--Gray);
+}
