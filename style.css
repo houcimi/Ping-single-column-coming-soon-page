@@ -68,26 +68,76 @@ main .dashboard {
 }
 
 main .socialmedia {
-    width: max-content;
+    width: fit-content;
+    display: flex;
     margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
     margin-bottom: 50px;
 }
 main .socialmedia a {
-    margin-right: 20px;
-    border: 1px solid var(--Blue);
-    border-radius: 50%;
-    padding: 10px 13px;
-    color: var(--Blue);
-    transition: color 0.3s ease-in-out;
+    text-decoration: none;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-right: 10px;
+     width: 42px ;
+     border: 1px solid var(--Blue);
+     color:var(--Blue) ;
+     border-radius: 50%;
+     transition: color 0.3s ease-in-out;
+}
+main .socialmedia a i {
+    padding: 12px;
+    
 }
 main .socialmedia a:hover {
     background-color: var(--Blue);
     color: white;
 }
 main .socialmedia a:first-child {
-    padding: 10px 15px;
+    /* padding: 10px 15px; */
 }
 main > p {
     font-size: 15px;
     color: var(--Gray);
+}
+
+@media (max-width:767px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    main .logo {
+        height: 23px;
+    width: 86px;
+    margin-bottom: 20px;
+    
+    }
+    main > h1 {
+        font-size: 22px;
+    }
+    main > h2 {
+        font-size: 16px;
+    }
+    main .emailsec {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    main .emailsec #emailinput {
+        width: 80%;
+    margin-bottom: 10px;
+    margin-right: 0;
+    padding: 12px 22px;
+    }
+    main .emailsec button {
+        width: 98%;
+    }
+    main .dashboard {
+        width: 100%;
+    }
+
 }
